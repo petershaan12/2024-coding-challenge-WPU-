@@ -10,7 +10,9 @@
 //     return total
 // }
 
-const squareSum = numbers => numbers.map(x => x * x).reduce((a, c) => a + c, 0)
+// const squareSum = numbers => numbers.map(x => x * x).reduce((a, c) => a + c, 0)
+
+const squareSum = num => num.reduce((sum, num) => sum + (num * num), 0)
 
 console.log(squareSum([1, 2]))
 console.log(squareSum([]))
