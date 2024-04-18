@@ -1,0 +1,3 @@
+function flickSwitch(arr) {
+    return [];
+}
