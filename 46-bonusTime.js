@@ -1,6 +1,9 @@
-function well(x) {
-    const good = x.filter(x => x === 'good').length
-    return good === 0 ? 'Fail!' : good <= 2 ? 'Publish!' : 'I smell a series!'
+// WPU Coding Challenge 2024 by Peter Shaan
+// 46/365
+// https://www.codewars.com/kata/56f6ad906b88de513f000d96/
+
+function bonusTime(salary, bonus) {
+    return '\u00A3' + (bonus ?  salary*10 : salary)
 }
 
-console.log(well(['bad', 'bad', 'bad']))
+console.log(bonusTime(10000, true))
