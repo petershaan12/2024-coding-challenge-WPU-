@@ -1,18 +1,5 @@
 function changeMe(moneyIn) {
-    switch (moneyIn) {
-        case '£5':
-            return '20p '.repeat(25).trim()
-        case '£2':
-            return '20p '.repeat(10).trim()
-        case '£1':
-            return '20p '.repeat(5).trim()
-        case '50p':
-            return '20p 20p 10p'
-        case '20p':
-            return '10p 10p'
-        default:
-            return moneyIn
-    }
+    return moneyIn == '50p' ? '20p 20p 10p' : (moneyIn == '20p' ? '10p 10p' : moneyIn == '£1' ? '20p '.repeat(5).trim() : moneyIn == '£2' ? '20p '.repeat(10).trim() : moneyIn == '£5' ? '20p '.repeat(25).trim() : moneyIn);
 }
 
 console.log(changeMe("£5"))
